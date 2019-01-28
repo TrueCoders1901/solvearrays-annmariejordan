@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
 namespace SolveArrays
 {
     public class ArraySolver
@@ -19,14 +20,16 @@ namespace SolveArrays
 
         public int SumEvens(int[] numbers)
         {
-            int total = 0;
+            int result = 0;
 
             foreach (int number in numbers)
-            {
-                total += number;
-            }
+                if (number % 2 == 0)
+                {
+                    result += number;
+                }
 
-            return total;
+            return result;
+
         }
 
         public double AverageEvens(int[] numbers)
