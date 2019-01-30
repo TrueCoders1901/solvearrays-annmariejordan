@@ -58,8 +58,27 @@ namespace SolveArrays
 
         public bool IsSumOdd(List<int> numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int sum = 0;
+            bool isItOdd = true;
+
+            for (int i = 0; i <numbers.Count; i++)
+            {
+                sum += numbers[i];
+                
+            }
+
+            if (sum % 2 == 0 )
+            {
+                isItOdd = false;
+
+            }
+            else
+            {
+                isItOdd = true;
+            }
+
+            return isItOdd;
+
         }
     }
 }
